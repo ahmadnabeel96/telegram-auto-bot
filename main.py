@@ -7,7 +7,9 @@ from openai import OpenAI
 # 🔑 حط معلوماتك هون
 TELEGRAM_TOKEN = "8331609314:AAH9DF0y6lUUJTfxf8zmjT-gV34wmEP1Aw0"
 CHANNEL_ID = "@anwar_aldhikr"
-OPENAI_API_KEY = "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"
+import os
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # إعداد البوت
 bot = Bot(token=TELEGRAM_TOKEN)
