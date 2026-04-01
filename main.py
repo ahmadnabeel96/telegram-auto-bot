@@ -49,6 +49,6 @@ async def post():
 async def main_loop():
     while True:
         await post()
-        await asyncio.sleep(10800)  # كل 3 ساعات
+        await asyncio.sleep(7200)  # كل 2 ساعات
 
 asyncio.run(main_loop())
